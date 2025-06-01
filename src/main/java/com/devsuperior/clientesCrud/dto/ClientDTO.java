@@ -23,7 +23,7 @@ public class ClientDTO {
     @NotNull(message = "Se não tiver renda digite 0")
     private Double income;
 
-    @PastOrPresent
+    @PastOrPresent(message = "Deve ser uma data no passado ou no dia de hoje")
     @NotNull(message = "Campo requerido")
     private LocalDate birthDate;
 
